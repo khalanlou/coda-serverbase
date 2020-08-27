@@ -262,8 +262,64 @@
             
             <!--content-->
             <div id="content" class="row justify-content-center" style="margin-top: 60px;">
+
+                <!--posts-->
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-xs-10" style="height: 100%;">
+                    <!--post-->
+                    <div id="content-posts" class="col-12" style="padding-top: 25px; margin: 0 0 40px 0; background-color: white; border-radius: 25px; box-shadow: 0 2px 10px rgb(226, 226, 226); height: 100%;">
+                        <div id="content-post-name" class="row col-12" style="margin: 40px 15px 40px 15px;">
+                            <div id="content-post-name-title" class="row col-xl-6 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <img id="content-post-name-title-img" src="Dependencies/Images/Ellipse 22.png" style="text-align: right; width: 30px; height: 30px; margin-left: 15px;"/>
+                                <h3 id="content-post-name-title-h4" style="margin-top: -3px;">
+                                    عنوان پست شماره یک
+                                </h3>
+                            </div>
+                            <div id="content-post-name-tag" class="row col-xl-6 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
+                                    برچسب
+                                </button>
+                                <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
+                                    برچسب
+                                </button>
+                                <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
+                                    برچسب
+                                </button>
+                            </div>
+                        </div>
+                        <div id="content-post-content" class="row col-12 justify-content-end" style="padding-bottom: 25px;">
+                            <div id="content-post-content-picture" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 25px;">
+                                <img src="Dependencies/Images/Rectangle 486.png" style="width: 100%; float: right; margin-right: 10px;">
+                            </div>
+                            <div id="content-post-content-parag" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 25px;">
+                                <p id="content-post-content-parag-p" style="margin-right: 15px; text-align: justify;">
+                                    این یک متن آزمایشی برای مشاهده ی توضیحات پست
+                                    شماره یک است که به صورت آزمایشی در اینجا قرار داده شده و
+                                    تغییرات مورد نیاز آن سنجیده می شود. خواهشمندیم به چیزی
+                                    دست نزنید و آرام نشینید.این یک متن آزمایشی برای مشاهده 
+                                    توضیحات پست  شماره یک است که به صورت آزمایشی در اینجا
+                                    قرار داده شده و تغییرات مورد نیاز آن سنجیده می شود.
+                                    خواهشمندیم به چیزی دست نزنید و آرام بنشینید.
+                                </p>
+                            </div>
+                            <button id="content-post-content-parag-button" class="btn btn-light parag-button">
+                                مشاهده
+                            </button>
+                        </div>
+                    </div>
+                    <!--post-->
+                    
+                    <!--more button-->
+                    <div class="row col-12 justify-content-center" style="margin: 80px 0 50px 0;">
+                        <button class="btn btn-light parag-button" style="width: 120px; height: 50px; border-radius: 35px; font-size: 20px;">
+                                بیشتر       
+                        </button>
+                    </div>
+                    <!--more button-->
+                </div>
+                <!--posts-->
+
                 <!--side-->
-                <div id="content-side" class="col-xl-3 col-lg-3 d-none d-lg-block" style="height: 100%; background-color: rgb(15, 15, 15); border-radius: 25px; margin-left: 40px;">
+                <div id="content-side" class="col-xl-3 col-lg-3 d-none d-lg-block" style="position: -webkit-sticky; position: sticky; top: 75px; height: 100%; background-color: #007930; border-radius: 25px; margin-right: 40px;">
                     <div id="content-side-search" class="row justify-content-center" style="margin-top: 40px; padding-bottom: 25px;">
                         <h5 style="color: white; font-size: 18px; margin-bottom: 10px;">
                             جست و جو در بلاگ
@@ -305,57 +361,6 @@
                     </div>
                 </div>
                 <!--side-->
-
-                <!--posts-->
-                <div id="content-posts" class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-xs-10" style="background-color: white; border-radius: 25px; box-shadow: 0 2px 10px rgb(226, 226, 226); height: 100%; margin-bottom: 40px;">
-                    <div id="content-post-name" class="row col-12" style="margin: 40px 15px 40px 15px;">
-                        <div id="content-post-name-title" class="row col-xl-6 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                            <img id="content-post-name-title-img" src={% static "index/Dependencies/Images/Ellipse 22.png" %} style="text-align: right; width: 30px; height: 30px; margin-left: 15px;"/>
-                            <h3 id="content-post-name-title-h4" style="margin-top: -3px;">
-                                عنوان پست شماره یک
-                            </h3>
-                        </div>
-                        <div id="content-post-name-tag" class="row col-xl-6 col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
-                                برچسب
-                            </button>
-                            <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
-                                برچسب
-                            </button>
-                            <button id="content-post-name-tag-button" class="btn btn-light tag-button" style="margin: 5px 0 5px 10px;">
-                                برچسب
-                            </button>
-                        </div>
-                    </div>
-                    <div id="content-post-content" class="row col-12 justify-content-end" style="padding-bottom: 25px;">
-                        <div id="content-post-content-picture" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 25px;">
-                            <img src={% static "index/Dependencies/Images/Rectangle 486.png" %} style="width: 100%; float: right; margin-right: 10px;">
-                        </div>
-                        <div id="content-post-content-parag" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 25px;">
-                            <p id="content-post-content-parag-p" style="margin-right: 15px; text-align: justify;">
-                                این یک متن آزمایشی برای مشاهده ی توضیحات پست
-                                شماره یک است که به صورت آزمایشی در اینجا قرار داده شده و
-                                تغییرات مورد نیاز آن سنجیده می شود. خواهشمندیم به چیزی
-                                دست نزنید و آرام نشینید.این یک متن آزمایشی برای مشاهده 
-                                توضیحات پست  شماره یک است که به صورت آزمایشی در اینجا
-                                قرار داده شده و تغییرات مورد نیاز آن سنجیده می شود.
-                                خواهشمندیم به چیزی دست نزنید و آرام بنشینید.
-                            </p>
-                        </div>
-                        <button id="content-post-content-parag-button" class="btn btn-light parag-button">
-                            مشاهده
-                        </button>
-                    </div>
-                </div>
-                <!--posts-->
-
-                <!--more button-->
-                <div class="row col-12 justify-content-center" style="margin: 80px 0 50px 0;">
-                    <button class="btn btn-light parag-button" style="width: 120px; height: 50px; border-radius: 35px; font-size: 20px;">
-                            بیشتر       
-                    </button>
-                </div>
-                <!--more button-->
             </div>
             <!--content-->
 

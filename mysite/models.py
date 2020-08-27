@@ -15,7 +15,7 @@ def validate_file_extension(value):
 class Article(models.Model):
     title = models.CharField(max_length=128, null=False, blank=False)
     cover = models.FileField(upload_to='article_cover/', null=False, blank=False, validators=[validate_file_extension])
-    content = RichTextField()
+    content = models.TextField(null=False,blank=False)
     created_at = models.DateTimeField(auto_now = True)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     author = models.ForeignKey('adminProfile', on_delete=models.CASCADE)
@@ -85,9 +85,22 @@ class main(models.Model):
 
 class centure(models.Model):
     centure_name = models.CharField(max_length=64)
-    centure_phone = models.IntegerField(blank=True,null= True)
-    centure_email = models.EmailField(null = False, blank = False)
-    centure_description = models.TextField(null=False,blank=False)
-    centure_promote = models.BooleanField(default= False)
+    centure_phone = models.IntegerField(blank=True, null=True)
+    centure_email = models.EmailField(null=False, blank=False)
+    centure_description = models.TextField(null=False, blank=False)
+    centure_promote = models.BooleanField(default=False)
+
     def __str__(self):
         return self.centure_description
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Article , on_delete=models.CASCADE,related_name='comments')
+    name = models.CharField(max_length=32, null=False, blank=False)
+    email = models.EmailField(null=True)
+    date = models.DateField(auto_now_add=True)
+    text = models.TextField()
+    permission = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "{}       ----by---->       {}".format(self.text, self.name.upper())
