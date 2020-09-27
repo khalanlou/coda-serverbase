@@ -17,9 +17,7 @@ coda/__pycache__/
 #github files
 key.txt
 key.txt.pub
-
-
-
 centos-ssh.txt
 centos-ssh.txt.pub
-
+# apps
+bigbluebutton
